@@ -33,6 +33,29 @@ if(typeof cordova.plugins.settings.openSetting != undefined){
 }
 ```
 
+###Example for iOS
+```js
+// function definition
+NativeSettings.prototype.openBluetoothSettings = function (onsucess, onfail) {
+    exec(onsucess, onfail, "NativeSettings", "openBluetoothSettings", []);
+};
+
+// open quietly and fail quietly
+cordova.plugins.settings.openBluetoothSettings(null, null);
+
+// with callbacks
+cordova.plugins.settings.openBluetoothSettings(
+  function() {
+    console.log("SUCCESS: Opened iOS bluetooth settings");
+    // insert success callback
+  },
+  function() {
+    console.log("ERROR: Failed to open iOS bluetooth settings");
+    // insert fail callback
+  });
+};
+```
+
 ##Android Settings
 
 Select one of the options below for the param settingName
