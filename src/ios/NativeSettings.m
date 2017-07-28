@@ -10,6 +10,16 @@
 
 @implementation NativeSettings
 
+- (void)openBluetoothSettings:(CDVInvokedUrlCommand*)command
+{
+		NSString *settingsUrl= @"App-Prefs:root=Bluetooth";
+		if ([[UIApplication sharedApplication] respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:settingsUrl] options:@{} completionHandler:^(BOOL success) {
+			NSLog(@"URL opened");
+			}];
+		}
+}
+
 - (void)open:(CDVInvokedUrlCommand*)command
 {
         NSURL *appSettings = [NSURL URLWithString:UIApplicationOpenSettingsURLString];

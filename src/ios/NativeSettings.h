@@ -11,5 +11,6 @@
 @interface NativeSettings : CDVPlugin
 
 - (void)open:(CDVInvokedUrlCommand*)command;
+- (void)openBluetoothSettings:(CDVInvokedUrlCommand*)command;
 
 @end
