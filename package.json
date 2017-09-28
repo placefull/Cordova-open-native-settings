@@ -1,0 +1,30 @@
+{
+  "name": "cordova-open-native-settings",
+  "version": "1.2.0",
+  "description": "A plugin to open the native settings for certain settings.",
+  "cordova": {
+    "id": "cordova-open-native-settings",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/placefull/cordova-open-native-settings"
+  },
+  "devDependencies": {
+    "cordova": ">=5.4.1"
+  },
+  "keywords": [
+    "settings",
+	"native",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "POSaBIT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/placefull/cordova-open-native-settings/issues"
+  },
+  "homepage": "https://github.com/placefull/cordova-open-native-settings"
+}
